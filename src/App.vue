@@ -1,10 +1,23 @@
 <template>
   <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <MyNavbar />
   </div>
-  <router-view />
+  <router-view></router-view>
 </template>
+<script>
+import MyNavbar from "./components/MyNavbar.vue";
+export default {
+  components: {
+    MyNavbar,
+  },
+};
+</script>
 
 <style>
 #app {
