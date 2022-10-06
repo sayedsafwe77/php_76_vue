@@ -16,13 +16,13 @@
   </div>
 </template>
 <script>
-import CardContainer from "../components/CardContainer.vue";
-import BootstrapCard from "../components/BootstrapCard.vue";
+// import CardContainer from "../components/CardContainer.vue";
+// import BootstrapCard from "../components/BootstrapCard.vue";
 export default {
-  components: {
-    BootstrapCard,
-    CardContainer,
-  },
+  // components: {
+  //   BootstrapCard,
+  //   CardContainer,
+  // },
   data() {
     return {
       comp_data: {
