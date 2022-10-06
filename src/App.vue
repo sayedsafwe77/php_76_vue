@@ -16,6 +16,12 @@ export default {
   components: {
     MyNavbar,
   },
+  mounted() {
+    let user = sessionStorage.getItem("user");
+    if (user) {
+      this.$store.commit("saveuser", JSON.parse(user));
+    }
+  },
 };
 </script>
 

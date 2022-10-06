@@ -1,6 +1,8 @@
 <template>
   <div>
-    <card-container
+    <h1>welcome {{ user.user.name }}</h1>
+    <p>your email is {{ user.user.email }}</p>
+    <!-- <card-container
       url="https://fakestoreapi.com/products"
       @getdata="getApiData"
     >
@@ -10,7 +12,7 @@
         :key="item.id"
         v-for="item in items"
       ></bootstrap-card>
-    </card-container>
+    </card-container> -->
   </div>
 </template>
 <script>
@@ -34,6 +36,11 @@ export default {
   methods: {
     getApiData(data) {
       this.items = data;
+    },
+  },
+  computed: {
+    user() {
+      return this.$store.state.user;
     },
   },
 };
